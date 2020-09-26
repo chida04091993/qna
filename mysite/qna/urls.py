@@ -9,7 +9,7 @@ app_name = 'qna'
 urlpatterns = [
 
     path('',index,name = 'index'),
-    path('signup/',signup,name = 'signup'),
+    path('registration/',signup,name = 'signup'),
     path('qpost/',PostQuestion.as_view(),name = 'post'),
     path('detail/<int:pk>/',QuestionDetail.as_view(), name = 'detail'),
     path('detail/<int:pk>/answer/',add_answer_to_question,name = 'answer'),
